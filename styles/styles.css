@@ -25,10 +25,6 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 10px;
-}
-
 aside {
     width: 30rem;
     margin: 1rem;
@@ -56,7 +52,7 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px dotted black;
+    border-top: 1px solid #333;
     text-align: center;
 
 }
