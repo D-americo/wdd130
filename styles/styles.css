@@ -1,3 +1,8 @@
+:root {
+    --border: 1px solid black;
+    --text-align: center;
+}
+
 main {
     max-width: 840px;
 }
@@ -20,7 +25,7 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -28,12 +33,12 @@ main img {
 aside {
     width: 30rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: var(--border);
     /* 💯*/
     padding: 2rem;
     background-color: white;
     color: green;
-    text-align: center;
+    text-align: var(--text-align);
 }
 
 aside img {
@@ -47,7 +52,7 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #333;
-    text-align: center;
+    border: var(--border);
+    text-align: var(--text-align);
 
 }
