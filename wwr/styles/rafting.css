@@ -90,6 +90,17 @@ nav a:hover {
     position: relative;
 }
 
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 139, 0.7);
+    color: #fff;
+    padding: 10px;
+    opacity: 0.9;
+}
+
 .hero img {
     display: block;
     width: 100%;
@@ -107,23 +118,9 @@ nav a:hover {
 
 /* o . vai direto em uma classe que queremos ou em algum atributo especifico, nesse caso a foto */
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    opacity: 0.7;
-    color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    background-color: rgba(0, 0, 139, 0.7);
-    color: #fff;
-    padding: 10px;
-}
-
 .hero article img {
     float: right;
     width: 125px;
-    box-shadow: black;
 
 }
 
