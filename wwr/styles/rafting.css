@@ -26,18 +26,58 @@ footer {
     margin: 0 auto;
 }
 
+main {
+    display: grid;
+    gap: 20px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    /* primeira coluna fixa para logo, segunda flexível para nav */
+    align-items: center;
+    padding: 10px;
+
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+
 }
 
-nav,
 p,
 section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    /* joga os itens para a direita*/
+    gap: 20px;
+    /* espaço entre os links*/
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    /* isso serve para cada item virar uma caixinha clicavel*/
+    padding: 10px;
+    text-decoration: none;
+    /* isso vai remover o sublinhado que geralmente fica padrão quando colocamos links*/
+    color: darkblue;
+    font-size: 1.5rem;
+    font-weight: 900;
+    list-style: none;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
 }
 
 .socialmedia a {
@@ -71,11 +111,13 @@ h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
-    text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
     color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 139, 0.7);
+    color: #fff;
+    padding: 10px;
 }
 
 .hero article img {
@@ -83,4 +125,34 @@ h1 {
     width: 125px;
     box-shadow: black;
 
+}
+
+.history,
+.adventure {
+    background-color: rgb(154, 218, 242);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    /* aqui serve para deixar os cantos arredondados*/
+}
+
+.history h2,
+.adventure h2 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* texto à esquerda, ícones à direita */
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    color: darkblue;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
 }
